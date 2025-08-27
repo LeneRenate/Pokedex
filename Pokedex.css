@@ -1,0 +1,88 @@
+/* 
+Color Palette
+
+*/
+
+/* 
+Type out all elements that needs styling
+header h1 nav ul li a
+main
+section .bulbasaur #grass
+section .charmander #fire
+section .squirtle #water
+*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+header {
+  height: 20vh;
+  background-color: #ee7a52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100svw;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 30svw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Base-styling for all sections */
+section {
+  display: flex;
+  flex-direction: row;
+  width: 80svw;
+  justify-content: space-between;
+}
+
+img {
+  height: 150px;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Styling for individual Pokemons */
+#grass {
+  background-color: green;
+  border: orange 5px dotted;
+}
+
+#fire {
+  background-color: orange;
+  border: blue 5px double;
+}
+
+#water {
+  background-color: lightblue;
+  border: green 5px dashed;
+}
