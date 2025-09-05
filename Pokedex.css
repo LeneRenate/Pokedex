@@ -14,6 +14,7 @@ section .squirtle #water
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -23,7 +24,6 @@ body {
 
 header {
   height: 20vh;
-  background-color: #ee7a52;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,6 +47,16 @@ a:hover {
   color: white;
 }
 
+h2 {
+  display: flexbox;
+  justify-content: space-around;
+  background-color: seagreen;
+  color: linen;
+  border: 2px solid mediumseagreen;
+  padding: 30px;
+  margin: 30px auto;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -58,7 +68,7 @@ section {
   display: flex;
   flex-direction: row;
   width: 80svw;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 img {
