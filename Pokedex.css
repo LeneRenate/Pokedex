@@ -22,12 +22,16 @@ body {
   text-align: center;
 }
 
+
 header {
   height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100svw;
+  background-image: url(./ImagesPokemon/PokedexPattern.png);
+  background-size: 50%;
+  background-position: 20% 30%;
 }
 
 ul {
@@ -69,6 +73,14 @@ section {
   flex-direction: row;
   width: 80svw;
   justify-content: space-around;
+  margin: 50px auto;
+}
+
+article {
+  padding: 20px;
+  border: 3px dashed white;
+  border-radius: 10px;
+  margin: 5px;
 }
 
 img {
@@ -79,20 +91,97 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   font-weight: 500;
+  background-color: rgba(250, 240, 230, 0.5);
+  padding: 2px 3px 3px 2px;
+  border-radius: 5px;
 }
 
 /* Styling for individual Pokemons */
-#grass {
-  background-color: green;
-  border: orange 5px dotted;
+/* .type {
+  background-color: ;
+  border-color: ;
+} */
+
+.grass {
+  background-color: #9BCC50;
+  border-color: ;
 }
 
-#fire {
-  background-color: orange;
-  border: blue 5px double;
+.fire {
+  background-color: #FD7D24;
+  border-color: ;
 }
 
-#water {
-  background-color: lightblue;
-  border: green 5px dashed;
+.water {
+  background-color: #4592C4;
+  border-color: ;
+}
+
+.poison {
+  background-color: #B97FC9;
+  border-color: ;
+}
+
+.bug {
+  background-color: #729F3F;
+  border-color: ;
+}
+
+.normal {
+  background-color: #A4ACAF;
+  border-color: ;
+}
+
+.flying {
+  background-color: #3DC7EF; #BDB9B8
+  border-color: ;
+}
+
+.electric {
+  background-color: #EED535;
+  border-color: ;
+}
+
+.ground {
+  background-color: #F7DE3F; #AB9842
+  border-color: ;
+}
+.fairy {
+  background-color: #FDB9E9;
+  border-color: ;
+}
+
+.fighting {
+  background-color: #D56723;
+  border-color: ;
+}
+
+.psychic {
+  background-color: #F366B9;
+  border-color: ;
+}
+
+.rock {
+  background-color: #A38C21;
+  border-color: ;
+}
+
+.steel {
+  background-color: #9EB7B8;
+  border-color: ;
+}
+
+.ice {
+  background-color: #51C4E7;
+  border-color: ;
+}
+
+.ghost {
+  background-color: #7B62A3;
+  border-color: ;
+}
+
+.dragon {
+  background-color: #53A4CF; #F16E57
+  border-color: ;
 }
