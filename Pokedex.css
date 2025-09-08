@@ -1,6 +1,8 @@
 /* 
 Color Palette
-
+Pokeball-Red, Dark: #E85344
+Pokeball-Red, Light: #EB6D60
+Background: #f5f7f9
 */
 
 /* 
@@ -19,26 +21,32 @@ section .squirtle #water
 }
 
 body {
-  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100vmax;
 }
 
 
 header {
   height: 20vh;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100svw;
   background-image: url(./ImagesPokemon/PokedexPattern.png);
-  background-size: 50%;
-  background-position: 20% 30%;
+  background-size: 50svh;
+  background-position: 4% 2%;
+  background-color: #f5f7f9;
+}
+
+h1 {
+  margin: auto;
+  text-shadow: 1px 1px darkslategrey;
 }
 
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  width: 30svw;
+  justify-content: space-evenly;
+  align-content: flex-end;
+  width: 60svw;
 }
 
 a {
@@ -48,12 +56,15 @@ a {
 
 a:hover {
   cursor: pointer;
+  background-color: #E85344;
+  padding: 6px;
+  border-radius: 8px;
   color: white;
 }
 
 h2 {
-  display: flexbox;
-  justify-content: space-around;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
   background-color: seagreen;
   color: linen;
   border: 2px solid mediumseagreen;
@@ -81,6 +92,13 @@ article {
   border: 3px dashed white;
   border-radius: 10px;
   margin: 5px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--type1-color),
+    var(--type1-color) 20px,
+    var(--type2-color) 20px,
+    var(--type2-color) 40px
+  );
 }
 
 img {
@@ -88,12 +106,26 @@ img {
 }
 
 p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   font-weight: 500;
   background-color: rgba(250, 240, 230, 0.5);
   padding: 2px 3px 3px 2px;
   border-radius: 5px;
+}
+
+#pokedexImg {
+  height: 50%;
+  margin: auto;
+}
+
+#typesIndex {
+  display: grid;
+}
+
+#typesIndex p {
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
 }
 
 /* Styling for individual Pokemons */
@@ -102,10 +134,10 @@ p {
   border-color: ;
 } */
 
-.grass {
-  background-color: #9BCC50;
+/* .type {
+  background-color: ;
   border-color: ;
-}
+} */
 
 .fire {
   background-color: #FD7D24;
@@ -133,7 +165,7 @@ p {
 }
 
 .flying {
-  background-color: #3DC7EF; #BDB9B8
+  background-color: #3DC7EF; #BDB9B8;
   border-color: ;
 }
 
@@ -183,5 +215,10 @@ p {
 
 .dragon {
   background-color: #53A4CF; #F16E57
+  border-color: ;
+}
+
+.grass {
+  background-color: #9BCC50;
   border-color: ;
 }
