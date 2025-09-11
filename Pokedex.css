@@ -37,8 +37,7 @@ header {
 }
 
 h1 {
-  /* margin: auto; */
-  margin: auto;
+  margin-top: 7vh;
   text-shadow: 1px 1px darkslategrey;
 }
 
@@ -52,7 +51,6 @@ ul {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
-  align-content: flex-end;
   width: 60svw;
 }
 
@@ -128,7 +126,7 @@ footer {
 
 #pokedexImg {
   height: 50%;
-  margin: auto;
+  margin: auto 5svw;
 }
 
 .container{
