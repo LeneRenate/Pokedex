@@ -37,8 +37,15 @@ header {
 }
 
 h1 {
+  /* margin: auto; */
   margin: auto;
   text-shadow: 1px 1px darkslategrey;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2%;
 }
 
 ul {
@@ -92,13 +99,14 @@ article {
   border: 3px dashed white;
   border-radius: 10px;
   margin: 5px;
-  background: repeating-linear-gradient(
+  /* Working on a diagonal split-color-option */
+  /* background: repeating-linear-gradient(
     45deg,
     var(--type1-color),
     var(--type1-color) 20px,
     var(--type2-color) 20px,
     var(--type2-color) 40px
-  );
+  ); */
 }
 
 img {
@@ -113,31 +121,38 @@ p {
   border-radius: 5px;
 }
 
+footer {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
 #pokedexImg {
   height: 50%;
   margin: auto;
 }
 
-#typesIndex {
+.container{
   display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 15px 20px;
 }
 
-#typesIndex p {
+.container div {
+  padding: 10px;
+  border-radius: 6px;
   text-align: center;
-  padding: 5px;
-  margin: 10px;
 }
 
 /* Styling for individual Pokemons */
-/* .type {
+
+/* Template for copy-paste:
+.type {
   background-color: ;
   border-color: ;
 } */
 
-/* .type {
-  background-color: ;
-  border-color: ;
-} */
+/* Border-color will come.
+It will be a slightly darker hue than the background for each */
 
 .fire {
   background-color: #FD7D24;
@@ -195,11 +210,6 @@ p {
 
 .rock {
   background-color: #A38C21;
-  border-color: ;
-}
-
-.steel {
-  background-color: #9EB7B8;
   border-color: ;
 }
 
