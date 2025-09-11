@@ -1,5 +1,5 @@
 /* 
-Color Palette
+Color Palette, general
 Pokeball-Red, Dark: #E85344
 Pokeball-Red, Light: #EB6D60
 Background: #f5f7f9
@@ -9,9 +9,9 @@ Background: #f5f7f9
 Type out all elements that needs styling
 header h1 nav ul li a
 main
-section .bulbasaur #grass
-section .charmander #fire
-section .squirtle #water
+grid.container div
+section article .type
+footer
 */
 
 * {
@@ -22,13 +22,13 @@ section .squirtle #water
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: 100vmax;
+  height: 100svh;
+  width: 100svw;
 }
 
 
 header {
-  height: 20vh;
-  width: 100%;
+  height: 20svh;
   display: flex;
   background-image: url(./ImagesPokemon/PokedexPattern.png);
   background-size: 50svh;
@@ -97,7 +97,7 @@ article {
   border: 3px dashed white;
   border-radius: 10px;
   margin: 5px;
-  /* Working on a diagonal split-color-option */
+  /* Working on a diagonal split-color-option, but not  */
   /* background: repeating-linear-gradient(
     45deg,
     var(--type1-color),
@@ -117,11 +117,14 @@ p {
   background-color: rgba(250, 240, 230, 0.5);
   padding: 2px 3px 3px 2px;
   border-radius: 5px;
+  text-align: center;
+  margin: auto;
 }
 
 footer {
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
+  padding: 10px;
 }
 
 #pokedexImg {
@@ -141,7 +144,8 @@ footer {
   text-align: center;
 }
 
-/* Styling for individual Pokemons */
+/* Styling for individual Pokemon-cards
+will be based on type(s) */
 
 /* Template for copy-paste:
 .type {
@@ -149,7 +153,7 @@ footer {
   border-color: ;
 } */
 
-/* Border-color will come.
+/* Border-color to come.
 It will be a slightly darker hue than the background for each */
 
 .fire {
