@@ -97,14 +97,6 @@ article {
   border: 3px dashed white;
   border-radius: 10px;
   margin: 5px;
-  /* Working on a diagonal split-color-option, but not  */
-  /* background: repeating-linear-gradient(
-    45deg,
-    var(--type1-color),
-    var(--type1-color) 20px,
-    var(--type2-color) 20px,
-    var(--type2-color) 40px
-  ); */
 }
 
 img {
@@ -155,6 +147,7 @@ will be based on type(s) */
 
 /* Border-color to come.
 It will be a slightly darker hue than the background for each */
+/* Also to come: diagonal split for Pokemons with 2 types */
 
 .fire {
   background-color: #FD7D24;
