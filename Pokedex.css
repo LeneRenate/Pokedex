@@ -26,7 +26,6 @@ body {
   width: 100svw;
 }
 
-
 header {
   height: 20svh;
   display: flex;
@@ -56,19 +55,20 @@ ul {
 
 a {
   text-decoration: none;
+  padding: 3px 6px;
   color: black;
+  background-color: hsla(210, 25%, 97%, 50%);
+  border-radius: 8px;
 }
 
 a:hover {
   cursor: pointer;
-  background-color: #E85344;
-  padding: 6px;
-  border-radius: 8px;
+  background-color: #e85344;
   color: white;
 }
 
 h2 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   background-color: seagreen;
   color: linen;
@@ -114,7 +114,7 @@ p {
 }
 
 footer {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
   padding: 10px;
 }
@@ -124,7 +124,7 @@ footer {
   margin: auto 5svw;
 }
 
-.container{
+.container {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   gap: 15px 20px;
@@ -134,6 +134,7 @@ footer {
   padding: 10px;
   border-radius: 6px;
   text-align: center;
+  border: 1px solid;
 }
 
 /* Styling for individual Pokemon-cards
@@ -145,85 +146,92 @@ will be based on type(s) */
   border-color: ;
 } */
 
-/* Border-color to come.
-It will be a slightly darker hue than the background for each */
-/* Also to come: diagonal split for Pokemons with 2 types */
+/* To come: diagonal split for Pokemons with 2 types */
+/* Re-evaluate colors for flying, ground and dragon? */
 
 .fire {
-  background-color: #FD7D24;
-  border-color: ;
+  background-color: #fd7d24;
+  border-color: #b14b02;
 }
 
 .water {
-  background-color: #4592C4;
-  border-color: ;
+  background-color: #4592c4;
+  border-color: #255474;
 }
 
 .poison {
-  background-color: #B97FC9;
-  border-color: ;
+  background-color: #b97fc9;
+  border-color: #7e3c90;
 }
 
 .bug {
-  background-color: #729F3F;
-  border-color: ;
+  background-color: #729f3f;
+  border-color: #34491d;
 }
 
 .normal {
-  background-color: #A4ACAF;
-  border-color: ;
+  background-color: #a4acaf;
+  border-color: #6c767a;
 }
 
 .flying {
-  background-color: #3DC7EF; #BDB9B8;
-  border-color: ;
+  /* background-color: #3DC7EF; #BDB9B8; */
+  background-color: #7dc0d3;
+  border-color: #3b93ab;
 }
 
 .electric {
-  background-color: #EED535;
-  border-color: ;
+  background-color: #eed535;
+  border-color: #a4900e;
 }
 
 .ground {
-  background-color: #F7DE3F; #AB9842
-  border-color: ;
+  /* background-color: #F7DE3F; #AB9842 */
+  background-color: #ae9882;
+  border-color: #6c5947;
 }
 .fairy {
-  background-color: #FDB9E9;
-  border-color: ;
+  background-color: #fdb9e9;
+  border-color: #fa52c7;
 }
 
 .fighting {
-  background-color: #D56723;
-  border-color: ;
+  background-color: #d56723;
+  border-color: #6e3512;
 }
 
 .psychic {
-  background-color: #F366B9;
-  border-color: ;
+  background-color: #f366b9;
+  border-color: #d41183;
 }
 
 .rock {
-  background-color: #A38C21;
-  border-color: ;
+  background-color: #a38c21;
+  border-color: #3f360d;
 }
 
 .ice {
-  background-color: #51C4E7;
-  border-color: ;
+  background-color: #51c4e7;
+  border-color: #188fb4;
 }
 
 .ghost {
-  background-color: #7B62A3;
-  border-color: ;
+  background-color: #7b62a3;
+  border-color: #483960;
 }
 
 .dragon {
-  background-color: #53A4CF; #F16E57
-  border-color: ;
+  /* background-color: #53A4CF; #F16E57 */
+  background-color: #a28993;
+  border-color: #644f57;
+}
+
+.steel {
+  background-color: #9eb7b8;
+  border-color: #628384;
 }
 
 .grass {
-  background-color: #9BCC50;
-  border-color: ;
+  background-color: #9bcc50;
+  border-color: #638a28;
 }
