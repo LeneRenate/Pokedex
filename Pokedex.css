@@ -1,18 +1,52 @@
 /* 
-Color Palette, general
-Pokeball-Red, Dark: #E85344
-Pokeball-Red, Light: #EB6D60
-Background: #f5f7f9
-*/
-
-/* 
 Type out all elements that needs styling
 header h1 nav ul li a
+h2
 main
-grid.container div
+grid.container ul li
 section article .type
 footer
 */
+
+:root {
+  --background: #f5f7f9;
+  --pokeball-light: #eb6d60;
+  --pokeball-dark: #e85344;
+  --grass: #9bcc50;
+  --grass-border: #638a28;
+  --fire: #fd7d24;
+  --fire-border: #b14b02;
+  --water: #4592c4;
+  --water-border: #255474;
+  --poison: #b97fc9;
+  --poison-border: #7e3c90;
+  --bug: #729f3f;
+  --bug-border: #34491d;
+  --normal: #a4acaf;
+  --normal-border: #6c767a;
+  --flying: #7dc0d3;
+  --flying-border: #3b93ab;
+  --electric: #eed535;
+  --electric-border: #a4900e;
+  --ground: #ae9882;
+  --ground-border: #6c5947;
+  --fairy: #fdb9e9;
+  --fairy-border: #fa52c7;
+  --fighting: #d56723;
+  --fighting-border: #6e3512;
+  --psychic: #f366b9;
+  --psychic-border: #d41183;
+  --rock: #a38c21;
+  --rock-border: #3f360d;
+  --ice: #51c4e7;
+  --ice-border: #188fb4;
+  --ghost: #7b62a3;
+  --ghost-border: #483960;
+  --dragon: #a28993;
+  --dragon-border: #644f57;
+  --steel: #9eb7b8;
+  --steel-border: #628384;
+}
 
 * {
   margin: 0;
@@ -32,38 +66,43 @@ header {
   background-image: url(./ImagesPokemon/PokedexPattern.png);
   background-size: 50svh;
   background-position: 4% 2%;
-  background-color: #f5f7f9;
+  background-color: var(--background);
+  /* position: sticky;
+  top: 0; */
 }
 
 h1 {
+  font-size: 40px;
   margin-top: 7vh;
   text-shadow: 1px 1px darkslategrey;
 }
 
 nav {
+  width: 60svw;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 2%;
 }
 
-ul {
+#page-menu ul {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
-  width: 60svw;
+  padding: 0 0 3svh 10svw;
 }
 
-a {
+li a {
+  font-size: 30px;
   text-decoration: none;
-  padding: 3px 6px;
   color: black;
+  padding: 5px 10px;
   background-color: hsla(210, 25%, 97%, 50%);
   border-radius: 8px;
+  margin: 35px;
 }
 
 a:hover {
   cursor: pointer;
-  background-color: #e85344;
+  background-color: var(--pokeball-light);
   color: white;
 }
 
@@ -80,35 +119,34 @@ h2 {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 /* Base-styling for all sections */
 section {
   display: flex;
-  flex-direction: row;
   width: 80svw;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 50px auto;
 }
 
 article {
   padding: 20px;
-  border: 3px dashed white;
+  border: 3px dashed;
   border-radius: 10px;
   margin: 5px;
 }
 
 img {
   height: 150px;
+  margin-bottom: 10px;
 }
 
 p {
   font-size: 20px;
   font-weight: 500;
   background-color: rgba(250, 240, 230, 0.5);
-  padding: 2px 3px 3px 2px;
   border-radius: 5px;
+  padding: 5px;
   text-align: center;
   margin: auto;
 }
@@ -125,12 +163,15 @@ footer {
 }
 
 .container {
+  list-style-type: none;
+  margin: auto;
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  gap: 15px 20px;
+  width: 600px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 30px;
 }
 
-.container div {
+.container li {
   padding: 10px;
   border-radius: 6px;
   text-align: center;
@@ -149,9 +190,20 @@ will be based on type(s) */
 /* To come: diagonal split for Pokemons with 2 types */
 /* Re-evaluate colors for flying, ground and dragon? */
 
+/* Testing gradient */
+/* #bulbasaur {
+  background-image: linear-gradient(
+    135deg,
+    var(--grass) 35%,
+    var(--grass),
+    var(--poison),
+    var(--poison) 65%
+  );
+} */
+
 .fire {
-  background-color: #fd7d24;
-  border-color: #b14b02;
+  background-color: var(--fire);
+  border-color: var(--fire-border);
 }
 
 .water {
