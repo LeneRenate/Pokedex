@@ -77,35 +77,6 @@ h1 {
   text-shadow: 1px 1px darkslategrey;
 }
 
-nav {
-  width: 60svw;
-  display: flex;
-  align-items: flex-end;
-}
-
-#page-menu ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 0 3svh 10svw;
-}
-
-li a {
-  font-size: 30px;
-  text-decoration: none;
-  color: black;
-  padding: 5px 10px;
-  background-color: hsla(210, 25%, 97%, 50%);
-  border-radius: 8px;
-  margin: 35px;
-}
-
-a:hover {
-  cursor: pointer;
-  background-color: var(--pokeball-light);
-  color: white;
-}
-
 h2 {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
@@ -119,6 +90,7 @@ h2 {
 main {
   display: flex;
   flex-direction: column;
+  padding-top: 5vh;
 }
 
 /* Base-styling for all sections */
@@ -165,10 +137,11 @@ footer {
 .container {
   list-style-type: none;
   margin: auto;
+  margin-bottom: 20px;
   display: grid;
-  width: 600px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px 30px;
+  width: 70svw;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px 60px;
 }
 
 .container li {
