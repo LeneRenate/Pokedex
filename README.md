@@ -10,7 +10,9 @@ The Pokédex is my go-to project whenever I pick up something new. Building the 
 
 **v2.0** — Rebuilt with vanilla JavaScript ES Modules. Pulls live data from PokéAPI, covers all 1025 Pokémon across 9 generations, and adds filtering, a detail modal, and a loading screen.
 
-**v3 — React** and **v4 — Next.js** versions are in progress.
+**v3.0 — React** — Rebuilt with React, Vite, and Tailwind CSS. Component-based architecture, client-side routing via React Router, and a dedicated detail page per Pokémon.
+
+**v4.0 — Next.js** is in progress.
 
 > See the [full series](#the-pokedex-series) below.
 
@@ -47,9 +49,9 @@ No build step or dependencies required. Just open `index.html` in a browser.
 
 ## The PokéDex Series
 
-| Version                             | Stack                    | Highlights                                  |
-| ----------------------------------- | ------------------------ | ------------------------------------------- |
-| **v1.0 — HTML & CSS** _(this repo)_ | HTML, CSS (Emmet)        | Static, local images, Gen I only            |
-| v2.0 — Vanilla JS                   | HTML, CSS, JS ES Modules | PokéAPI, all 1025 Pokémon, filtering, modal |
-| v3.0 — React                        | React                    | _(in progress)_                             |
-| v4.0 — Next.js                      | Next.js                  | _(in progress)_                             |
+| Version                             | Stack                     | Highlights                                               |
+| ----------------------------------- | ------------------------- | -------------------------------------------------------- |
+| **v1.0 — HTML & CSS** _(this repo)_ | HTML, CSS (Emmet)         | Static, local images, Gen I only                         |
+| v2.0 — Vanilla JS                   | HTML, CSS, JS ES Modules  | PokéAPI, all 1025 Pokémon, filtering, modal              |
+| v3.0 — React                        | React, Vite, Tailwind CSS | Component architecture, client-side routing, detail page |
+| v4.0 — Next.js                      | Next.js                   | _(in progress)_                                          |
